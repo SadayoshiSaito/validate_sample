@@ -15,4 +15,5 @@
 //    return view('welcome');
 //});
 
-Route::match(['GET', 'POST'], '/', 'ValidateTestController@create');  //追加
+Route::get('/', 'ValidateTestController@index');
+Route::post('/', 'ValidateTestController@create');
